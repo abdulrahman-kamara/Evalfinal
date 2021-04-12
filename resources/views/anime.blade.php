@@ -16,7 +16,8 @@
         <div>
           <a class="cta" href="/anime/{{ $anime->id }}/new_review">Écrire une critique</a>
         </div>
-        <form action="/anime/{{ $anime->id }}/add_to_watch_list" method="POST">
+        <form action="/add_to_watch_list" method="POST">
+          @csrf
           <button class="cta">Ajouter à ma watchlist</button>
         </form>
       </div>
